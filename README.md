@@ -11,8 +11,6 @@ Source of the Data: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/ind
 
 SQL Queries: 
 
-R syntax: 
-
 Tableu :
 
 ## Background of Cyclistic Project 
