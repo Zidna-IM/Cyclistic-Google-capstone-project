@@ -2,7 +2,7 @@
   
 ## Introduction
 **Scenario:** I am a junior data analyst at a fictional bike-share 
-company in Chicago, **Cyclistic**. 
+company in Chicago, Cyclistic. 
 
 In this project, I will carry out various real-world tasks. To address important business questions, I will follow the stages of the data analysis process: ask, prepare, process, analyze, share, and act. 
 
