@@ -39,15 +39,28 @@ Moreno has assigned me the first question to answer: How do annual members and c
 
 ## Prepare the data for analysis 
 ### Data Source
-Using Cyclistic’s historical trip data to analyze and identify trends from Jan 2022 to Dec 2022 which can be downloaded from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html).
+Using Cyclistic’s historical trip data to analyze and identify trends from January 2024 to December 2024 which can be downloaded from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
 The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement). This is public data that can be used to explore how different customer types are using Cyclistic bikes.  
 
 ### Data Organization
-There are 12 files with naming convention of YYYYMM-divvy-tripdata and each file includes information for one month, such as the ride id, bike type, start time, end time, start station, end station, start location, end location, and whether the rider is a member or not. The corresponding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.
+There are 12 files with naming convention of YYYYMM-divvy-tripdata and each file includes information for one month, such as the ride id, bike type, start time, end time, start station, end station, start location, end location, and whether the rider is a annual member or not. 
+
+The corresponding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.
 
 ## Process
+SQL BigQuery is used to combine 12 datasets from each month into one dataset and clean it.
+### Consideration for Choosing Tools
+* Cyclistic is a large dataset that has more than 5.6 million rows.
+* So, it is crucial to use SQL BigQuery which is designed to efficiently handle and manage large-scale data.
+* In the other hand, Excel isn't suitable for the Cyclistic dataset because it can't handle more than 1 million rows. 
+### Combining the Data
+SQL Query: [Data Combining](https://github.com/)  
+12 csv files are uploaded as tables in the dataset '2024_Cyclistic'. Another table named "combined_data" is created, containing 5,000,000 rows of data for the entire year. 
 
+### Data Exploration
+SQL Query: [Data Exploration](https://github.com/)  
+Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.  
 
 
 
