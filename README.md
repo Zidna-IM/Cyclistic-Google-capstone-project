@@ -19,7 +19,7 @@ In this project, I will carry out various real-world tasks. To address important
 Source of the Data: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 22/06/25]
 
 SQL Queries: 
-1. [Data Combining](Cyclistic-Project/Data Combining.sql)
+1. [Data Combining](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Combining.sql)
 2. 
 
 Tableu :
@@ -69,8 +69,11 @@ SQL BigQuery is used to combine 12 datasets from each month into one dataset and
 * So, it is crucial to use SQL BigQuery which is designed to efficiently handle and manage large-scale data.
 * In the other hand, Excel isn't suitable for the Cyclistic dataset because it can't handle more than 1 million rows. 
 ### Combining the Data
-SQL Query: [Data Combining](Cyclistic-Project/Data Combining.sql)  
-12 csv files are uploaded as tables in the dataset '2024_Cyclistic'. Another table named "combined_data" is created, containing 5,000,000 rows of data for the entire year. 
+SQL Query: [Data Combining](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Combining.sql) 
+
+Step:
+1. 12 csv files are uploaded as tables in the dataset '2024_Cyclistic'.
+2. Then, Merge all 12 tables & Create "combined_data" table that containing 5,860,568 rows of data for the entire year. 
 
 ### Data Exploration
 SQL Query: [Data Exploration](https://github.com/)  
