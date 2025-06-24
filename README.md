@@ -16,13 +16,14 @@ In this project, I will carry out various real-world tasks. To address important
 7. [Act on the data with Recommendation](#act-on-the-data-with-recommendation)
 
 ### Quick links:
-Source of the Data: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 22/06/25]
+**Source of the Data:** [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 22/06/25]
 
-SQL Queries: 
+**SQL Queries: **
 1. [Data Combining](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Combining.sql)
 2. [Data Exploration](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Exploration.sql)
+3. [Data Cleaning]( )
 
-Tableu :
+**Tableu :**
 
 ## Background of Cyclistic Project 
 Cyclistic is a bike-share program that features more than 5,800 bicycles and 600 docking stations. Cyclistic sets itself apart by also offering reclining bikes, hand tricycles, and cargo bikes, making bike-share more inclusive to people with disabilities and riders who can’t use a standard two-wheeled bike. The majority of riders opt for traditional bikes; about 8% of riders use the assistive options. Cyclistic users are more likely to ride for leisure, but about 30% use them to commute to work each day.   
