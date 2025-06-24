@@ -13,7 +13,7 @@ In this project, I will carry out various real-world tasks. To address important
 4. [Process data by cleaning and checking it](#process-data-by-cleaning-and-checking-it)
 5. [Analyze data](#analyze-data)
 6. [Share data](#share-data)
-7. [Act on the data_Recommendation](#act-on-the-data-_-recommendation)
+7. [Act on the data with Recommendation](#act-on-the-data-with-recommendation)
 
 ### Quick links:
 Source of the Data: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 22/06/25]
