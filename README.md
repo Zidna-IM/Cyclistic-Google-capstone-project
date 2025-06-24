@@ -90,7 +90,8 @@ To know what kind of data that needed to be clean, I am familiarizing myself wit
    
    ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/number%20of%20null%20values%20in%20all%20columns.png)
 
-* Note that some columns have same number of missing values. This may be due to missing information in the same row i.e. station's name and id for the same station and latitude and longitude for the same ending station.
+* Note that some columns have the same number of missing values, which may indicate that the missing information comes from the same rows
+* for example, missing both the station's name and ID, or the latitude and longitude of the same ending station.
   
 3. ride_id as the primary key must has distinct values. So, I need to check for duplicates.  
 
