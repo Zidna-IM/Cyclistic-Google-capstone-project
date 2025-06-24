@@ -19,6 +19,8 @@ In this project, I will carry out various real-world tasks. To address important
 Source of the Data: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 22/06/25]
 
 SQL Queries: 
+1. [Data Combining](Cyclistic-Project/Data Combining.sql)
+2. 
 
 Tableu :
 
