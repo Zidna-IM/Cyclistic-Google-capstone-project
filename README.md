@@ -6,6 +6,9 @@ company in Chicago, Cyclistic.
 
 In this project, I will carry out various real-world tasks. To address important business questions, I will follow the stages of the data analysis process: ask, prepare, process, analyze, share, and act. 
 
+### Table of content 
+1. [Background of Cyclistic Project](#background-of-cyclistic-project)
+
 ### Quick links:
 Source of the Data: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 22/06/25]
 
