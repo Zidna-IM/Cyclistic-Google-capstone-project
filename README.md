@@ -20,7 +20,7 @@ Source of the Data: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/ind
 
 SQL Queries: 
 1. [Data Combining](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Combining.sql)
-2. 
+2. [Data Exploration](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Exploration.sql)
 
 Tableu :
 
@@ -76,10 +76,55 @@ Step:
 2. Then, Merge all 12 tables & Create "combined_data" table that containing 5,860,568 rows of data for the entire year. 
 
 ### Data Exploration
-SQL Query: [Data Exploration](https://github.com/)  
-Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.  
+SQL Query: [Data Exploration](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Exploration.sql)
 
+To know what kind of data that needed to be clean, I am familiarizing myself with the dataset
 
+**Observations :**
+1. The table below shows that all column names already has the right data types. In this data, The __ride_id__ column is the primary key.  
+
+   ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/data%20types%20of%20all%20columns.png)  
+
+2. Identify number of __null values__ in each column.  
+   
+   ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/number%20of%20null%20values%20in%20all%20columns.png)
+
+* Note that some columns have same number of missing values. This may be due to missing information in the same row i.e. station's name and id for the same station and latitude and longitude for the same ending station.
+  
+3. ride_id as the primary key must has distinct values. So, I need to check for duplicates.  
+
+   ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Check%20Duplicates.png)
+
+** Return:** There are no __duplicate__ rows in the data.  
+   
+4. All __ride_id__ values have length of 16. so, there's no need to clean it.
+   ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/length%20of%20ride_id.png)
+   * We check it by compare the total rows with the rows that have length of 16.
+      
+6. There are 3 unique types of bikes(__rideable_type__) in Cyslistic data.
+
+   ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/3%20unique%20types%20of%20bikes.png)
+
+7. The __started_at__ and __ended_at__ shows start and end time of the trip in YYYY-MM-DD hh:mm:ss UTC format.
+8. Group It based on the total trip duration:
+   * 7596 rows trips which has duration longer than a day 
+   * 132644 trips having less than a minute duration or having end time
+     earlier than start time, I need to remove them. 
+     
+10. Total of 1073951 rows have both __start_station_name__ and __start_station_id__ missing which needs to be removed.
+11. Total of 1104653 rows have both __end_station_name__ and __end_station_id__ missing which needs to be removed.
+12. Total of 7232 rows have both __end_lat__ and __end_lng__ missing which needs to be removed.
+13. Identify & Calculate each type of member riders :
+    * 2151658 member riders
+    * 3708910 casual riders
+14. The start_station_id and end_station_id columns should be removed, as they do not contribute meaningful insights to the current analysis. While the longitude and latitude columns may not be directly used in the analysis, they can still be useful for map visualizations.
+
+### Data Cleaning
+SQL Query: [Data Cleaning]( )  
+1. All the rows having missing values are deleted.  
+2. 3 more columns ride_length for duration of the trip, day_of_week and month are added.  
+3. Trips with duration less than a minute and longer than a day are excluded.
+4. Total 1,375,912 rows are removed in this step.
 
 
   
