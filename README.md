@@ -102,7 +102,7 @@ To know what kind of data that needed to be clean, I am familiarizing myself wit
    
 4. All __ride_id__ values have length of 16. so, there's no need to clean it.
    ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/length%20of%20ride_id.png)
-   * We check it by compare the total rows with the rows that have length of 16.
+   * Icheck it by compare the total rows with the rows that have length of 16.
       
 6. There are 3 unique types of bikes(__rideable_type__) in Cyslistic data.
 
@@ -151,7 +151,7 @@ __Months:__ When it comes to monthly trips, both casual and members exhibit comp
 __Days of Week:__ When the days of the week are compared, it is discovered that casual riders make more journeys on the weekends while members show a decline over the weekend in contrast to the other days of the week.  
 __Hours of the Day:__ The members shows 2 peaks throughout the day in terms of number of trips. One is early in the morning at around 6 am to 8 am and other is in the evening at around 4 pm to 8 pm while number of trips for casual riders increase consistently over the day till evening and then decrease afterwards.  
   
-We can infer from the previous observations that member may be using bikes for commuting to and from the work in the week days while casual riders are using bikes throughout the day, more frequently over the weekends for leisure purposes. Both are most active in summer and spring.  
+Ican infer from the previous observations that member may be using bikes for commuting to and from the work in the week days while casual riders are using bikes throughout the day, more frequently over the weekends for leisure purposes. Both are most active in summer and spring.  
   
 Ride duration of the trips are compared to find the differences in the behavior of casual and member riders.  
   
