@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS `coursera-461904.2024_Cyclistic.cleaned_combined_data
     n.ride_id, rideable_type, started_at, ended_at, 
     ride_length,
     CASE EXTRACT(DAYOFWEEK FROM started_at) --- Extract & convert day & month 
-      WHEN 1 THEN 'SUN'
+      WHEN 1 THEN 'SUN'                      ---- Then, add day_of_week & month as a new collumn
       WHEN 2 THEN 'MON'
       WHEN 3 THEN 'TUES'
       WHEN 4 THEN 'WED'
