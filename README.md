@@ -21,7 +21,8 @@ In this project, I will carry out various real-world tasks. To address important
 **SQL Queries: **
 1. [Data Combining](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Combining.sql)
 2. [Data Exploration](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Exploration.sql)
-3. [Data Cleaning]( )
+3. [Data Cleaning](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Cleaning.sql)
+4. 
 
 **Tableu :**
 
@@ -122,11 +123,18 @@ To know what kind of data that needed to be clean, I am familiarizing myself wit
 14. The start_station_id and end_station_id columns should be removed, as they do not contribute meaningful insights to the current analysis. While the longitude and latitude columns may not be directly used in the analysis, they can still be useful for map visualizations.
 
 ### Data Cleaning
-SQL Query: [Data Cleaning]( )  
-1. All the rows having missing values are deleted.  
-2. 3 more columns ride_length for duration of the trip, day_of_week and month are added.  
-3. Trips with duration less than a minute and longer than a day are excluded.
-4. Total 1,375,912 rows are removed in this step.
+SQL Query: [Data Cleaning](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Cleaning.sql)  
+First, I need to create new table with clean data. That way, I still have the raw data, in case something happen  
+1. I will extract and convert day & month from DATETIME
+2. Then, add day_of_week & month as a new collumn
+3. Then, use Subquery & Join to Create new collumn: ride_length 
+4. Remove All the rows that have missing values
+5. Filter my data with WHERE
+   
+   _ride_length > 1 AND ride_length < 1440_
+   * To excluded data that has Trips with duration less than a minute and
+     longer than a day
+7. Total 1.692.411 rows are removed in this step.
 
 
   
