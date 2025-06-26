@@ -158,7 +158,8 @@ bikes types used by each type of riders (member & casual)
 ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/member%20and%20casual%20riders.png) 
  
 * The members make 63.87% of the total while remaining 36.13% constitutes casual riders
-  
+
+----------------------------------------------------
 2.	member and casual riders are compared by the **type of bikes** they are using.
 
 ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/bikes%20types%20used%20by%20each%20type%20of%20riders.png) 
@@ -181,7 +182,7 @@ In this table, we can see how bike types are distributed in each riders.
  
   •	QUERY: Since, the month is not in number format. To sort the months in     order from January to December, I use 'CASE Month WHEN…THEN…). 
  
-  ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-%20%20%20%20project/blob/main/Cyclistic-Project/Code%20trip%20per%20month.png)
+  ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Code%20trip%20per%20month.png)
 
   Result:
 ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/total%20trips%20of%20each%20riders%20per%20month.png) 
