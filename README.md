@@ -22,7 +22,7 @@ In this project, I will carry out various real-world tasks. To address important
 1. [Data Combining](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Combining.sql)
 2. [Data Exploration](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Exploration.sql)
 3. [Data Cleaning](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Cleaning.sql)
-4. [Data Analysis]( ) 
+4. [Data Analysis](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Analysis.sql)
 
 **Tableu :**
 
@@ -137,41 +137,135 @@ First, I need to create new table with clean data. That way, I still have the ra
 7. Total 1.692.411 rows are removed in this step.
 
 ## Analyze data
-SQL Query: [Data Analysis]( )
+SQL Query: [Data Analysis](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Data%20Analysis.sql)
+
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.  
 The analysis question is: How do annual members and casual riders use Cyclistic bikes differently?  
 
-First of all, member and casual riders are compared by the type of bikes they are using.  
+### Descriptive Statistic
+Before Analyze it, lets conduct descriptive statistic to get a better sense of the data layout.
+1. The mean of ride_length : 16.77 minutes
+2. The max ride_length : 1439.83 minutes = 23 hours 59 minutes
+3. Top 3 day_of_week 
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/mode%20of%20day_of_week.png)
+4. Top 3 rideable_type 
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/mode%20of%20rideable_type%20.png)
+	
+### Data Analysis
+bikes types used by each type of riders (member & casual)
 
-The members make 59.7% of the total while remaining 40.3% constitutes casual riders. Each bike type chart shows percentage from the total. Most used bike is classic bike followed by the electric bike. Docked bikes are used the least by only casual riders. 
+1.	Calculate **total trips/riders**
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/member%20and%20casual%20riders.png) 
+ 
+* The members make 63.87% of the total while remaining 36.13% constitutes casual riders
   
-Next the number of trips distributed by the months, days of the week and hours of the day are examined.  
+2.	member and casual riders are compared by the **type of bikes** they are using.
+
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/bikes%20types%20used%20by%20each%20type%20of%20riders.png) 
+ 
+In this table, we can see how bike types are distributed in each riders.
+
+* **casual riders**: Most used bike is classic bike followed by the electric bike. electric scooter are used the least.
+* **member riders**: Most used bike is classic bike followed by the electric bike. electric scooter are used the least.
+
+--> So, in both cases: 
+*	Most used bike is classic bike with 2.714.476 trips 
+*	Followed by the electric bike with 1.406.741 trips 
+* The least used is electric scooter with 46.940 trips 
+ 
+--------------------------------------------
+
+3.	Next, I analyze the distribution of total trips across months, weekdays, and hours of the day.
+   
+  **a.**	**Trips per Month : **
+ 
+  •	QUERY: Since, the month is not in number format. To sort the months in     order from January to December, I use 'CASE Month WHEN…THEN…). 
+ 
+  ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-%20%20%20%20project/blob/main/Cyclistic-Project/Code%20trip%20per%20month.png)
+
+  Result:
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/total%20trips%20of%20each%20riders%20per%20month.png) 
+ 
+>>>>>>>>>>>>>>
+When it comes to monthly trips, both casual and members exhibit comparable behavior, with more trips in the spring and summer and fewer in the winter. The gap between casuals and members is closest in the month of july in summer. 
   
-__Months:__ When it comes to monthly trips, both casual and members exhibit comparable behavior, with more trips in the spring and summer and fewer in the winter. The gap between casuals and members is closest in the month of july in summmer.   
+  **b.	Trips per Day**
+
+  * QUERY:	Since, the month is not in number format. To sort the months in   order from January to December, I use 'CASE Month WHEN…THEN…). 
+ 
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Code%20Trips%20per%20Day.png)
+
+  Result:
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Trips%20per%20Day.png)  
+ 
+>>>>>>>>>>>>>>
+ 
 __Days of Week:__ When the days of the week are compared, it is discovered that casual riders make more journeys on the weekends while members show a decline over the weekend in contrast to the other days of the week.  
+ 
+  **c.** **Trips per Hours**
+
+  Total Trips per Hours for Casual riders
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Trips%20per%20hour%20cs.png) 
+
+   Total Trips per Hours for member riders
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Trips%20per%20hour%20mm.png)
+
+>>>>>>>>>>>>>> 
 __Hours of the Day:__ The members shows 2 peaks throughout the day in terms of number of trips. One is early in the morning at around 6 am to 8 am and other is in the evening at around 4 pm to 8 pm while number of trips for casual riders increase consistently over the day till evening and then decrease afterwards.  
-  
-Ican infer from the previous observations that member may be using bikes for commuting to and from the work in the week days while casual riders are using bikes throughout the day, more frequently over the weekends for leisure purposes. Both are most active in summer and spring.  
-  
-Ride duration of the trips are compared to find the differences in the behavior of casual and member riders.  
-  
+ 
+#### SUMMARY of total Trip per Month / Day / Hour 
+ 
+  >>>>>>>>>>>>>>>>
+I can infer from the previous observations that member may be using bikes for commuting to and from the work in the week days while casual riders are using bikes throughout the day, more frequently over the weekends for leisure purposes. Both are most active in summer and spring.   
+ 
+---------------------------------------------------------
+
+4.	Then, **Avg ride durations** are analyzed to uncover behavioral differences between casual and member riders.
+   
+Here's the result
+
+**average ride duration per month**
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/AVG%20ride%20duration.png)
+
+**average ride duration per day**
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/AVG%20ride%20duration%20per%20day.png) 
+
+**average ride duration per hour for casual riders**
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/AVG%20ride%20duration%20per%20hour%20cs.png) 
+
+**average ride duration per hour for member riders**
+![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/AVG%20ride%20duration%20per%20hour%20mm.png) 
+ 
+  >>>>>>>>>>>>>>>>
 Take note that casual riders tend to cycle longer than members do on average. The length of the average journey for members doesn't change throughout the year, week, or day. However, there are variations in how long casual riders cycle. In the spring and summer, on weekends, and from 10 am to 2 pm during the day, they travel greater distances. Between five and eight in the morning, they have brief trips.
   
 These findings lead to the conclusion that casual commuters travel longer (approximately 2x more) but less frequently than members. They make longer journeys on weekends and during the day outside of commuting hours and in spring and summer season, so they might be doing so for recreation purposes.    
-  
-To further understand the differences in casual and member riders, locations of starting and ending stations can be analysed. Stations with the most trips are considered using filters to draw out the following conclusions.  
-  
-Casual riders have frequently started their trips from the stations in vicinity of museums, parks, beach, harbor points and aquarium while members have begun their journeys from stations close to universities, residential areas, restaurants, hospitals, grocery stores, theatre, schools, banks, factories, train stations, parks and plazas.  
-  
-  
+
+----------------------------
+5. Analyze the locations of starting and ending stations
+   
+To further understand the differences in casual and member riders.
+
+* Stations with the most trips are considered using filters to draw out the following conclusions.  
+ 
+You can download the raw data as an Excel file here:  
+[Download the dataset (Excel)](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/starting%20%26%20ending%20station%20locations%20(1).xlsx)
+ 
 Similar trend can be observed in ending station locations. Casual riders end their journay near parks, museums and other recreational sites whereas members end their trips close to universities, residential and commmercial areas. So this proves that casual riders use bikes for leisure activities while members extensively rely on them for daily commute.  
   
-Summary:
+### Summary of Analysis :
+  >>>>>>>>>>>>>>>>>>>>
+**Casual**
+* Prefer using bikes throughout the day, more frequently over the weekends in summer and spring for leisure activities.
+* Travel twice as long but less frequently than members.
+* Start and end their journeys near parks, museums, along the coast, and other recreational sites.
   
-|Casual|Member|
-|------|------|
-|Prefer using bikes throughout the day, more frequently over the weekends in summer and spring for leisure activities.|Prefer riding bikes on week days during commute hours (8 am / 5pm) in summer and spring.|
-|Travel 2 times longer but less frequently than members.|Travel more frequently but shorter rides (approximately half of casual riders' trip duration).|
-|Start and end their journeys near parks, museums, along the coast and other recreational sites.|Start and end their trips close to universities, residential and commercial areas.|  
+**Member**
+* Prefer riding bikes on weekdays during commute hours (8 am / 5 pm) in summer and spring.
+* Travel more frequently but with shorter rides (approximately half the duration of casual riders’ trips).
+* Start and end their trips close to universities, residential, and commercial areas.
+
+	 
+
   
   
