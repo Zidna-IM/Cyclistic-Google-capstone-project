@@ -182,13 +182,14 @@ In this table, we can see how bike types are distributed in each riders.
 
 3.	Next, I analyze **the distribution of total trips** across months, weekdays, and hours of the day.
    
-  **a.**	**Trips per Month : **
+  **a.**	**Trips per Month :**
  
   •	QUERY: Since, the month is not in number format. To sort the months in     order from January to December, I use 'CASE Month WHEN…THEN…). 
  
   ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/Code%20trip%20per%20month.png)
 
   Result:
+  
 ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/total%20trips%20of%20each%20riders%20per%20month.png) 
  ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/DViz/Sum_trips_M.png)
  
@@ -280,8 +281,7 @@ To further understand the differences in casual and member riders.
 
 * Stations with the most trips are considered using filters to draw out the following conclusions.  
  
-You can download the raw data as an Excel file here:  
-[Download the dataset (Excel)](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/starting%20%26%20ending%20station%20locations%20(1).xlsx)
+You can download "the locations of starting and ending stations data" as an Excel file [here](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/starting%20%26%20ending%20station%20locations%20(1).xlsx)
 
 **starting stations**
 ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/DViz/start_loc.png)
@@ -290,6 +290,7 @@ You can download the raw data as an Excel file here:
 ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/DViz/End_Loc.png)
 
 **Insights:**
+
 Casual riders have frequently started their trips from the stations in vicinity of parks, Paved trail / greenway, Commercial area.
 
 while members have begun their journeys from stations close to universities, residential areas, restaurants, hospitals, schools, factories, train stations,and parks.
@@ -309,12 +310,12 @@ Similar trend can be observed in ending station locations.
 
 ### Summary of Analysis :
 
-**Casual**
+**Casual Riders**
 * "Riders tend to prefer using bikes all day long, especially on weekends during the summer and spring, primarily for leisure activities
 * Travel twice as long (24-30 minutes)  but less frequently than member riders.
 * Start and end their journeys near parks, Paved trail / greenway, Commercial area and other recreational sites.
   
-**Member**
+**Member Riders**
 * Prefer riding bikes on weekdays during commute hours (6-8 am / 4-6 pm) in summer and spring.
 * Travel more frequently but with shorter rides (approximately half the duration of casual riders’ trips(10-14 minutes).
 * Start and end their trips close to factories, universities, train stations, residential and greenway.
