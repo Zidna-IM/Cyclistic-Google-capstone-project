@@ -322,17 +322,18 @@ Similar trend can be observed in ending station locations.
 ## Act on the data with Recommendation
 By understanding the behavior of casual and member riders, marketing strategies can be created to encourage casual riders to switch to membership.
 
-Recommendations:
+**Recommendations:**
 
-Marketing campaigns conducted during peak casual usage times (weekends, June--September) at recreational locations popular among casual riders (Park, Greenway & commercial area).
+1. Marketing campaigns conducted during peak casual usage times (weekends, June--September) at recreational locations popular among casual riders (Park, Greenway & commercial area).
 
-Casual riders travel twice as long (24-30 minutes) but less frequently. The jump from a single ride to an annual membership might seem too big.
-* So, Offer them A short-term pass (e.g., 2-month or 3-month). It will give them unlimited &  longer rides with low price. 
-
-Casual riders tend to use their bikes to go to recreational locations. 
+2. Casual riders tend to use their bikes to go to recreational locations. 
 * So, place many check point in many popular recreational locations among casual riders.
 * The more check points they reach, the more likely they are to get a big discount voucher or more free pass.
-  
+
+3. Casual riders travel twice as long (24-30 minutes) but less frequently. The jump from a single ride to an annual membership might seem too big.
+* So, Offer them A short-term pass (e.g., 2-month or 3-month).
+* It will give them unlimited & longer rides with low price. 
+
 
   
   
