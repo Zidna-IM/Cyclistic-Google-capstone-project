@@ -148,9 +148,12 @@ The analysis question is: How do annual members and casual riders use Cyclistic 
 Before Analyze it, lets conduct descriptive statistic to get a better sense of the data layout.
 1. The mean of ride_length : 16.77 minutes
 2. The max ride_length : 1439.83 minutes = 23 hours 59 minutes
-3. Top 3 day_of_week 
+3. Top 3 day_of_week
+   
 ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/mode%20of%20day_of_week.png)
-4. Top 3 rideable_type 
+
+4. Top 3 rideable_type
+   
 ![image](https://github.com/Zidna-IM/Cyclistic-Google-capstone-project/blob/main/Cyclistic-Project/mode%20of%20rideable_type%20.png)
 	
 ### Data Analysis
