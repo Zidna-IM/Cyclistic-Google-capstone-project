@@ -335,7 +335,11 @@ By understanding the behavior of casual and member riders, marketing strategies 
 * The more check points they reach, the more likely they are to get a big discount voucher or more free pass.
 
 3. Casual riders travel twice as long (24-30 minutes) but less frequently. The jump from a single ride to an annual membership might seem too big.
-* So, Offer them A short-term pass (e.g., 2-month or 3-month).
+
+So, Offer them : 
+* **A short-term pass** (e.g., 1-month or 2-month or 3-month).
+* **Annual membership with weekly version**. Provide more cheap price for casual riders
+  
 * It will give them unlimited & longer rides with low price. 
 
 
